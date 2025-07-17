@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>My Portfolio</h1>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <img src="profile.jpg" alt="Profile picture of the developer" class="profile-pic">
+        <p>Hello! I am a web developer passionate about creating modern and responsive websites. 
+            I love coding and enjoy learning new technologies. I have experience in HTML, CSS, and JavaScript, and I am always eager to improve my skills and take on new challenges.
+            In my free time, I like to work on personal projects and contribute to open-source communities.
+            Feel free to explore my portfolio and get in touch if you have any questions or opportunities!
+
+        </p>
+    </section>
+
+    <section id="projects">
+        <h2>My Projects</h2>
+        <div class="project-card">
+            <img src="project1.jpg" alt="Screenshot of project 1">
+            <h3>Weather Dashboard</h3>
+            <p>This is a Weather App that provides real-time weather updates.</p>
+        </div>
+        <div class="project-card">
+            <img src="project2.jpg" alt="Screenshot of project 2">
+            <h3>Landing Page</h3>
+            <p>This is a landing page that introduces users too meet people</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form id="contactForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" required></textarea>
+
+            <button type="submit">Send</button>
+        </form>
+        <p id="formMsg"></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 My Portfolio</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
